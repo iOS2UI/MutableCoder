@@ -7,8 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "LoginObject.h"
-#import "HomeObject.h"
+#import "MCPlatform.h"
 
 @interface ViewController ()
 
@@ -20,12 +19,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    // 能访问到不同 项目 中的 Class
-    [HomeObject test];
-    
-    [LoginObject test];
-    
-    
+    UINavigationController *mainNav = [MCPlatform sharedInstance].mainNav;
+    mainNav.view.frame = self.view.bounds;
+    mainNav.view.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+    [self addChildViewController:mainNav];
+    [self.view addSubview:mainNav.view];
 }
 
 

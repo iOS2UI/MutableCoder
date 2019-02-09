@@ -7,17 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		511A5A4C220EC5DC008053A0 /* CHContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 511A5A4A220EC5DC008053A0 /* CHContext.h */; };
+		511A5A4D220EC5DC008053A0 /* CHContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 511A5A4B220EC5DC008053A0 /* CHContext.m */; };
+		511A5A5F220ECE7C008053A0 /* PlatformKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 511A5A5E220ECE7C008053A0 /* PlatformKit.framework */; };
+		511A5A6F220ED9F3008053A0 /* CHMainController.h in Headers */ = {isa = PBXBuildFile; fileRef = 511A5A6D220ED9F3008053A0 /* CHMainController.h */; };
+		511A5A70220ED9F3008053A0 /* CHMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 511A5A6E220ED9F3008053A0 /* CHMainController.m */; };
+		511A5A77220EDD0A008053A0 /* CHSubController.h in Headers */ = {isa = PBXBuildFile; fileRef = 511A5A75220EDD0A008053A0 /* CHSubController.h */; };
+		511A5A78220EDD0A008053A0 /* CHSubController.m in Sources */ = {isa = PBXBuildFile; fileRef = 511A5A76220EDD0A008053A0 /* CHSubController.m */; };
 		519C14B92079139300D49F89 /* CoderHome.h in Headers */ = {isa = PBXBuildFile; fileRef = 519C14B72079139300D49F89 /* CoderHome.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		519C14D42079170900D49F89 /* HomeObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 519C14D22079170900D49F89 /* HomeObject.h */; };
-		519C14D52079170900D49F89 /* HomeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 519C14D32079170900D49F89 /* HomeObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		511A5A4A220EC5DC008053A0 /* CHContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHContext.h; sourceTree = "<group>"; };
+		511A5A4B220EC5DC008053A0 /* CHContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHContext.m; sourceTree = "<group>"; };
+		511A5A5E220ECE7C008053A0 /* PlatformKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PlatformKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		511A5A6D220ED9F3008053A0 /* CHMainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHMainController.h; sourceTree = "<group>"; };
+		511A5A6E220ED9F3008053A0 /* CHMainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHMainController.m; sourceTree = "<group>"; };
+		511A5A75220EDD0A008053A0 /* CHSubController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHSubController.h; sourceTree = "<group>"; };
+		511A5A76220EDD0A008053A0 /* CHSubController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHSubController.m; sourceTree = "<group>"; };
 		519C14B42079139300D49F89 /* CoderHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoderHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		519C14B72079139300D49F89 /* CoderHome.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoderHome.h; sourceTree = "<group>"; };
 		519C14B82079139300D49F89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		519C14D22079170900D49F89 /* HomeObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeObject.h; sourceTree = "<group>"; };
-		519C14D32079170900D49F89 /* HomeObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,17 +35,55 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				511A5A5F220ECE7C008053A0 /* PlatformKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		511A5A5D220ECE7C008053A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				511A5A5E220ECE7C008053A0 /* PlatformKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		511A5A81220EDEEB008053A0 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				519C14B72079139300D49F89 /* CoderHome.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		511A5A82220EDEF9008053A0 /* Context */ = {
+			isa = PBXGroup;
+			children = (
+				511A5A4A220EC5DC008053A0 /* CHContext.h */,
+				511A5A4B220EC5DC008053A0 /* CHContext.m */,
+			);
+			path = Context;
+			sourceTree = "<group>";
+		};
+		511A5A83220EDF08008053A0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				511A5A6D220ED9F3008053A0 /* CHMainController.h */,
+				511A5A6E220ED9F3008053A0 /* CHMainController.m */,
+				511A5A75220EDD0A008053A0 /* CHSubController.h */,
+				511A5A76220EDD0A008053A0 /* CHSubController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		519C14AA2079139300D49F89 = {
 			isa = PBXGroup;
 			children = (
 				519C14B62079139300D49F89 /* CoderHome */,
 				519C14B52079139300D49F89 /* Products */,
+				511A5A5D220ECE7C008053A0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -50,10 +98,10 @@
 		519C14B62079139300D49F89 /* CoderHome */ = {
 			isa = PBXGroup;
 			children = (
-				519C14B72079139300D49F89 /* CoderHome.h */,
+				511A5A81220EDEEB008053A0 /* Headers */,
+				511A5A82220EDEF9008053A0 /* Context */,
+				511A5A83220EDF08008053A0 /* Controllers */,
 				519C14B82079139300D49F89 /* Info.plist */,
-				519C14D22079170900D49F89 /* HomeObject.h */,
-				519C14D32079170900D49F89 /* HomeObject.m */,
 			);
 			path = CoderHome;
 			sourceTree = "<group>";
@@ -65,7 +113,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				519C14D42079170900D49F89 /* HomeObject.h in Headers */,
+				511A5A77220EDD0A008053A0 /* CHSubController.h in Headers */,
+				511A5A6F220ED9F3008053A0 /* CHMainController.h in Headers */,
+				511A5A4C220EC5DC008053A0 /* CHContext.h in Headers */,
 				519C14B92079139300D49F89 /* CoderHome.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +188,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				519C14D52079170900D49F89 /* HomeObject.m in Sources */,
+				511A5A70220ED9F3008053A0 /* CHMainController.m in Sources */,
+				511A5A4D220EC5DC008053A0 /* CHContext.m in Sources */,
+				511A5A78220EDD0A008053A0 /* CHSubController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +246,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../PlatformKit/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -246,6 +299,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../PlatformKit/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
@@ -265,6 +319,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = CoderHome/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -285,6 +340,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = CoderHome/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
